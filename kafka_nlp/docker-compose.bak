@@ -30,17 +30,7 @@ services:
 
     extra_hosts:
       - "moby:127.0.0.1"
-     
-  zkui:
-      image: qnib/zkui
-      hostname: zkui
-      container_name: zkui
-      ports: 
-        - '9090:9090'
-      
-      extra_hosts:
-       - "moby:127.0.0.1"    
-  
+
   schema-registry:
     image: confluentinc/cp-schema-registry:5.2.0
     hostname: schema-registry
